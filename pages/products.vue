@@ -57,7 +57,7 @@ const { pending, data: productInfo, refresh, error } = useAsyncData(
     <button @click="refresh" class="bg-sky-300 px-3 py-1 rounded text-black/80 mx-4">
       Refresh
     </button>
-    <div class="grid grid-cols-5 gap-4">
+    <div class="grid grid-cols-5 gap-4 mb-5">
       <div
         v-for="product in productInfo.products"
         class="flex flex-col shadow bg-white p-6 rounded-md"
